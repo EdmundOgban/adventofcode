@@ -28,5 +28,5 @@ solve_p2([A, B, C | T]) ->
     sets:fold(fun (E, _) -> priority(E) end, 0, Set) + solve_p2(T).
 
 solve(Data) ->
-    Inp =string:split(Data, "\n", all),
+    Inp = string:split(Data, "\n", all),
     {solve_p1(Inp), solve_p2(Inp)}.
