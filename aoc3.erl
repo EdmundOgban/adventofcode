@@ -3,7 +3,7 @@
 
 
 priority(X) when $a =< X, X =< $z ->
-    X - $b;
+    X - $a + 1;
 priority(X) when $A =< X, X =< $Z ->
     X - $A + 27.
 
