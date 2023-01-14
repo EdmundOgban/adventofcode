@@ -53,7 +53,7 @@ request(get, URL) ->
 
 
 download_input(Modname, Day) ->
-    filelib:ensure_dir("./input/"),
+    filelib:ensure_dir("./inputs/"),
     URLDay = "https://adventofcode.com/2022/day/" ++ Day,
     io:format("Downloading input file for ~s ...\n", [Modname]),
     {ok, {{_, 200, _}, _, Content}} = request(get, URLDay ++ "/input"),
