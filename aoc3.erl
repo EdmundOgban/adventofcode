@@ -2,10 +2,10 @@
 -export([solve/1]).
 
 
-priority(X) when 97 =< X, X =< 122 ->
-    X - 96;
-priority(X) when 65 =< X, X =< 90 ->
-    X - 38.
+priority(X) when $a =< X, X =< $z ->
+    X - $b;
+priority(X) when $A =< X, X =< $Z ->
+    X - $A + 27.
 
 solve_p1(X) when X =:= []; X =:= [[]] ->
     0;
